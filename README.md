@@ -1,5 +1,3 @@
-Here is the complete, combined `README.md` containing both the project overview and the technical documentation in a single file.
-
 ```markdown
 # Electronic Store Project 🛒🔌
 
