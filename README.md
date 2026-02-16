@@ -132,8 +132,11 @@ The project is designed for continuous operational deployment. Upcoming phases i
 
 ## 👥 Contributors
 
-* **Mohannad** - Developer
 * **Omar** - Developer
+* **Abriham** - Developer
+* **hossyn** - Developer
+* **Abdullah* - Developer
+* **Mohannad** - Developer
 
 ## 📄 License
 
