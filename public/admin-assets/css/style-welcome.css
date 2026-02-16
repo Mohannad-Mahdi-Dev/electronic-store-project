@@ -1,0 +1,303 @@
+
+        /* Tailwind-like utilities (كما عندك) */
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb
+        }
+
+        ::after,
+        ::before {
+            --tw-content: ''
+        }
+
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            tab-size: 4;
+            font-family: Figtree, sans-serif;
+            font-feature-settings: normal
+        }
+
+        body {
+            margin: 0;
+            line-height: inherit
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        .min-h-screen {
+            min-height: 100vh
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .grid {
+            display: grid
+        }
+
+        .items-center {
+            align-items: center
+        }
+
+        .justify-center {
+            justify-content: center
+        }
+
+        .justify-between {
+            justify-content: space-between
+        }
+
+        .gap-6 {
+            gap: 1.5rem
+        }
+
+        .gap-4 {
+            gap: 1rem
+        }
+
+        .p-6 {
+            padding: 1.5rem
+        }
+
+        .px-6 {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem
+        }
+
+        .py-10 {
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem
+        }
+
+        .rounded-lg {
+            border-radius: .5rem
+        }
+
+        .rounded-2xl {
+            border-radius: 1rem
+        }
+
+        .rounded-full {
+            border-radius: 9999px
+        }
+
+        .bg-white {
+            background-color: #fff
+        }
+
+        .bg-gray-100 {
+            background-color: #f3f4f6
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        .text-sm {
+            font-size: .875rem;
+            line-height: 1.25rem
+        }
+
+        .text-base {
+            font-size: 1rem;
+            line-height: 1.5rem
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem
+        }
+
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem
+        }
+
+        .text-5xl {
+            font-size: 3rem;
+            line-height: 1
+        }
+
+        .font-semibold {
+            font-weight: 600
+        }
+
+        .font-bold {
+            font-weight: 700
+        }
+
+        .text-gray-600 {
+            color: #4b5563
+        }
+
+        .text-gray-700 {
+            color: #374151
+        }
+
+        .text-gray-900 {
+            color: #111827
+        }
+
+        .text-white {
+            color: #fff
+        }
+
+        .shadow-2xl {
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25)
+        }
+
+        .border {
+            border-width: 1px
+        }
+
+        .border-gray-200 {
+            border-color: #e5e7eb
+        }
+
+        .w-full {
+            width: 100%
+        }
+
+        .max-w-3xl {
+            max-width: 48rem
+        }
+
+        .inline-flex {
+            display: inline-flex
+        }
+
+        .transition {
+            transition: all .2s ease
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            padding: .75rem 1rem;
+            border-radius: .75rem;
+            font-weight: 600
+        }
+
+        .btn-primary {
+            background: #111827;
+            color: #fff
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            filter: brightness(1.05)
+        }
+
+        .btn-ghost {
+            border: 1px solid #e5e7eb;
+            color: #111827;
+            background: #fff
+        }
+
+        .btn-ghost:hover {
+            transform: translateY(-1px);
+            background: #f9fafb
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: .5rem;
+            padding: .35rem .65rem;
+            border-radius: 9999px;
+            background: #f3f4f6;
+            color: #374151;
+            font-size: .875rem
+        }
+
+        .muted {
+            color: #6b7280
+        }
+
+        .bg-dots-darker {
+            background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E")
+        }
+
+        .bg-center {
+            background-position: center
+        }
+
+        .hero-wrap {
+            position: relative
+        }
+
+        .topbar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .link {
+            font-weight: 600;
+            color: #374151
+        }
+
+        .link:hover {
+            color: #111827;
+            text-decoration: underline
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.12)
+        }
+
+        .divider {
+            height: 1px;
+            background: #e5e7eb;
+            margin: 1.25rem 0
+        }
+
+        .section-title {
+            font-weight: 700;
+            color: #111827
+        }
+
+        .menu {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap
+        }
+
+        .tile {
+            border: 1px solid #e5e7eb;
+            border-radius: 1rem;
+            padding: 1rem;
+            background: #fff
+        }
+
+        .tile:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 20px -12px rgb(0 0 0 / 0.25)
+        }
+
+        @media (min-width: 768px) {
+            .text-5xl {
+                font-size: 3.5rem
+            }
+        }
+   

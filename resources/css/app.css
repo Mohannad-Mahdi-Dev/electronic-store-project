@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Global Dark Mode Base Styles ===== */
+@layer base {
+    /* Smooth transition when toggling */
+    html {
+        @apply transition-colors duration-300;
+    }
+
+    /* Body */
+    body {
+        @apply bg-gray-50 text-gray-900;
+    }
+    html.dark body {
+        @apply bg-gray-900 text-gray-100;
+    }
+
+    /* All headings */
+    html.dark h1,
+    html.dark h2,
+    html.dark h3,
+    html.dark h4,
+    html.dark h5,
+    html.dark h6 {
+        @apply text-gray-100;
+    }
+
+    /* Paragraphs */
+    html.dark p {
+        @apply text-gray-300;
+    }
+
+    /* Links default */
+    html.dark a {
+        color: inherit;
+    }
+
+    /* Inputs & textareas */
+    html.dark input,
+    html.dark textarea,
+    html.dark select {
+        @apply bg-gray-800 text-gray-100 border-gray-600;
+    }
+    html.dark input::placeholder,
+    html.dark textarea::placeholder {
+        @apply text-gray-400;
+    }
+
+    /* Tables */
+    html.dark table {
+        @apply text-gray-300;
+    }
+    html.dark th {
+        @apply bg-gray-800 text-gray-200;
+    }
+    html.dark td {
+        @apply border-gray-700;
+    }
+    html.dark tr:hover {
+        @apply bg-gray-800/50;
+    }
+
+    /* Cards / bordered divs */
+    html.dark .border-gray-100,
+    html.dark .border-gray-200 {
+        border-color: theme('colors.gray.700');
+    }
+    html.dark .border-gray-50 {
+        border-color: theme('colors.gray.800');
+    }
+}
+
+/* ===== Custom Utilities ===== */
+[x-cloak] {
+    display: none !important;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+html.dark .glass-effect {
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
