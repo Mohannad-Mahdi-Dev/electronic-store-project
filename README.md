@@ -140,10 +140,4 @@ The project is designed for continuous operational deployment. Upcoming phases i
 
 ## 📄 License
 
-This project is open-source and licensed under the [MIT License]().
-
-```
-
-Would you like me to translate this README into Arabic so you have a bilingual version for your repository?
-
-```
+This project is open-source and licensed under the compuny : YemenTech.
