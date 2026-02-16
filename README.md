@@ -69,8 +69,6 @@ php artisan db:seed
 6. **Start the Development Servers:**
 You will need two terminal windows to run both the frontend build process and the backend server:
 ```bash
-# Terminal 1: Compile frontend assets
-npm run dev
 
 # Terminal 2: Start the Laravel PHP server
 php artisan serve
