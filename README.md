@@ -58,8 +58,11 @@ php artisan key:generate
 5. **Database Setup:**
 Update the `.env` file with your local database credentials (`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`), then run the migrations and seeders:
 ```bash
-php artisan migrate --seed
-
+php artisan migrate
+and
+php artisan nugrate --seed
+or 
+php artisan db:seed
 ```
 
 
